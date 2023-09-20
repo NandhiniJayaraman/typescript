@@ -12,3 +12,19 @@ console.log(arr4[3]);
 var arr5;
 arr5 = [23, 'nandhini', true];
 console.log(arr5);
+var rect2 = {
+    width: 23,
+    height: 45,
+    area: 567,
+    color: "red"
+};
+console.log(rect2);
+// functions
+function divide({ dividend, divisor }) {
+    return dividend / divisor;
+}
+console.log(divide({ dividend: 10, divisor: 2 }));
+// TS casting
+let x = 'hello';
+console.log(x.length);
+// class
