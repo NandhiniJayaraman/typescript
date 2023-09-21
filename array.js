@@ -37,17 +37,30 @@ let o = new Myclass(34);
 console.log(o.a);
 // class implements interfaces
 class Person {
-    constructor(name, id) {
+    constructor() {
+        this.name = 'nandhini';
+        this.id = 23;
+        this.city = 'salem';
+        this.phn_num = 8270328188;
         this.getname = () => {
-            return this.name;
+            return this.name + this.city + this.id + this.phn_num;
         };
-        this.name = name;
-        this.id = id;
     }
 }
-let ob2 = new Person('nandhini', 123);
-console.log(ob2.id);
+let ob2 = new Person();
+// console.log(ob2.id);
 console.log(ob2.getname());
+class Sample extends Person {
+    constructor() {
+        super(...arguments);
+        this.std = 12;
+    }
+    print() {
+        return this.name + this.std;
+    }
+}
+let s = new Sample();
+console.log(s.print());
 // // get and set value
 // class Myclass2{
 //      private _val:string='20'

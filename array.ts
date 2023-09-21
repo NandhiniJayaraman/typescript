@@ -49,22 +49,36 @@ interface inter1{
     name:string
     id:number
 }
+interface inter2{
+    city:string,
+    phn_num:number
+}
 // class implements interfaces
-class Person implements inter1{
-    name:string
-    id:number
+class Person implements inter1,inter2{
+    name:string='nandhini'
+    id:number=23
+    city:string='salem'
+    phn_num:number=8270328188
 
-    constructor(name:string,id:number){
-        this.name=name
-        this.id=id
-    }
+
     getname=()=>{
-        return this.name
+         return this.name + this.city + this.id + this.phn_num
     }
 }
-let ob2=new Person('nandhini',123)
-console.log(ob2.id);
+let ob2=new Person()
+// console.log(ob2.id);
 console.log(ob2.getname());
+
+class Sample extends Person{
+    std:number=12
+
+    print(){
+        return this.name + this.std
+    }
+
+}
+let s=new Sample()
+console.log(s.print())
 
 
 
