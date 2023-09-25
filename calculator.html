@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="calulator.css">
 </head>
 <body>
-    <center>
     <div class="overall">
         <h1>CALCULATOR</h1>
         
@@ -13,30 +12,30 @@
         <br>
         <div class ="numbers">
             <input type="button" id="n1" value="AC" onclick="result.value=' '">
-            <input type="button" id="n1" value="CL" onclick="result.value=' '">
+            <input type="button" id="n1" value="🆑" onclick="back()">
             <input type="button" id="n1" value="%" onclick="result.value+='%'">
-            <input type="button" id="n1" value="/" onclick="result.value+='/'">
+            <input type="button" id="n1" value="➗" onclick="result.value+='/'">
         </div>
         <br>
         <div class ="numbers1">
             <input type="button" id="n1" value="7" onclick="result.value+='7'">
             <input type="button" id="n1" value="8" onclick="result.value+='8'">
             <input type="button" id="n1" value="9" onclick="result.value+='9'">
-            <input type="button" id="n1" value="*" onclick="result.value+='*'">
+            <input type="button" id="n1" value="✖️" onclick="result.value+='*'">
         </div>
         <br>
         <div class ="numbers2">
             <input type="button" id="n1" value="4" onclick="result.value+='4'">
             <input type="button" id="n1" value="5" onclick="result.value+='5'">
             <input type="button" id="n1" value="6" onclick="result.value+='6'">
-            <input type="button" id="n1" value="-" onclick="result.value+='-'">
+            <input type="button" id="n1" value="➖" onclick="result.value+='-'">
         </div>
         <br>
         <div class ="numbers3">
             <input type="button" id="n1" value="1" onclick="result.value+='1'">
             <input type="button" id="n1" value="2" onclick="result.value+='2'">
             <input type="button" id="n1" value="3" onclick="result.value+='3'">
-            <input type="button" id="n1" value="+" onclick="result.value+= '+'">
+            <input type="button" id="n1" value="➕" onclick="result.value+= '+'">
         </div>
         <br>
         <div class ="numbers4">
@@ -45,10 +44,12 @@
             <input type="button" id="n1" value="." onclick="result.value+='.'">
             <input type="button" id="n1" value="=" onclick="result.value=eval(result.value)">
         </div>
-        
-        
-
     </div>
-    </center>
+    <script>
+        function back(){
+        var exp  = result.value;
+        result.value=exp.substring(0,exp.length -1);
+        }
+    </script>
 </body>
 </html>
