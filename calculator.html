@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator 🖩</title>
+</head>
+<body>
+    <div class="body">
+        <h1>CALCULATOR</h1>
+        <input id="input1" placeholder="Enter the number" onInput=" "><br>
+        <input type="number" id="input2" placeholder="Enter the number"><br>
+        <input type="button" value="ADD" onclick="add()"> 
+        <input type="button"> 
+        <input type="button"> <br>
+        <div id="result"></div>
+
+    </div>
+    <script >
+       var a= document.getElementById("input1").value;
+       var b= document.getElementById("input2").value;
+       function add(a,b){
+        c=a+b
+        return c
+       }
+       document.getElementById("result").innerHTML=c;
+    </script>
+</body>
+</html>
