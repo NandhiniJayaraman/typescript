@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    background: url(calci.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overall{
+    text-align: center;
+    /* background-color: aqua; */
+    height: 80vh;
+    width: 30%;
+    margin-top: 100px;
+}
+#result{
+    /* margin-left: 60px; */
+    border: 2px solid;
+    background-color: rgb(250, 250, 250);
+    height: 50px;
+    border-radius: 5px;
+    
+}
+#n1{
+    border: 5px solid rgb(3, 35, 82);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
