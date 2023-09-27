@@ -2,46 +2,25 @@
 <html lang="en">
 <head>
     <title>Intraction  js</title>
+    <link rel="stylesheet" href="intract.css">
 </head>
 <body>
-    <!-- <script>
-        document.write("hi everyone")
-    </script>
-    <a href="#" onclick="alert('welcome!')">click me</a> -->
-    <!-- <input type="button" value="Display" onclick="display()">
-    <p> welcome to all</p>
-    <script src="intract.js"></script> -->
-    <input type="button" value="Open swiggy" onclick="open()">
-    <form name="form1">
-        enter name:<input type="text" name="name1">
-        <input type="button" onclick="printvalue()"  value="print name">
-
-    </form>
-
-    <script >
-        // alert("welcome")
-        // function display(){
-        //    var v= prompt("what is your name?")
-        //     alert("welcome"+ v)
-        // }
-        // function open(){
-        //     var w =confirm("do u open swiggy?")
-        //     if(w==true){
-                
-        //         open("https://www.javatpoint.com")
-        //     }
-        //     else{
-        //         alert("close the swiggy")
-        //     }
-        // }
-        // history.back()
-            // document.write("Nandhini J")
-            // document.writeln("yuybuyfguehbfyugiuhbciuygewqhbyu")
-        // function printvalue(){
-        //     var name2=document.form1.name1.value;
-        //     alert('welcome'+ name2)
-
-        }    
-    </script>
+    <div class="box">
+        <h1> CALCULATOR</h1>
+        <div id="result"></div>
+        <div>
+        <input type="number" id="input1" placeholder="Enter First number">
+        <input type="number" id="input2" placeholder=" Enter Second number">
+        </div>
+        <div class="btn_box">
+        <input type="button" class="btn1" onclick="add()" value="➕">
+        <input type="button" class="btn1" onclick="sub()" value="➖">
+        <input type="button" class="btn1" onclick="mul()" value="✖️">
+        <input type="button" class="btn1" onclick="div()" value="➗">
+        <input type="reset" class="btn1" onclick="clea()" value="AC" >
+        </div>
+        
+    </div>
+    <script src="intract.js"></script>
 </body>
 </html>
